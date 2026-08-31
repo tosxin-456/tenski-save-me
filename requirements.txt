@@ -1,0 +1,32 @@
+# Verified working on Python 3.14 (all wheels prebuilt — no compiler needed).
+# Floors are the versions confirmed to install and pass the test suite.
+
+fastapi>=0.141.1
+uvicorn[standard]>=0.52.4
+sqlalchemy[asyncio]>=2.0.52
+asyncpg>=0.31.0
+pydantic>=2.13.5
+pydantic-settings>=2.15.0
+email-validator>=2.3.0
+
+# Auth (bcrypt used directly — passlib 1.7.4 is incompatible with bcrypt 5.x)
+python-jose[cryptography]>=3.5.0
+bcrypt>=5.0.0
+python-multipart>=0.0.32
+
+# Statement extraction
+pdfplumber>=0.11.10
+pandas>=3.0.5
+openpyxl>=3.1.5
+
+# ML / entity resolution
+scikit-learn>=1.9.0
+numpy>=2.5.2
+rapidfuzz>=3.14.6
+joblib>=1.5.3
+
+# Utilities
+python-dateutil>=2.9.0
+aiofiles>=25.1.0
+httpx>=0.28.1
+python-dotenv>=1.2.3
